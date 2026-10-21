@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f3" />
+    <meta name="description" content="Jack Zhang is a PhD student in Operations Research at MIT studying reinforcement learning, partially observable systems, and reliable decision-making under uncertainty." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jack Zhang — Research" />
+    <meta property="og:description" content="Reinforcement learning, partially observable systems, and decision-making under uncertainty." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Jack Zhang</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="wrap header-inner">
+        <a class="brand" href="#top" aria-label="Jack Zhang, back to top">
+          <span class="brand-mark" aria-hidden="true">JZ<span class="brand-dot">.</span></span>
+          <span class="brand-name">Jack Zhang</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cv" data-profile-link="cv" href="#" hidden>CV <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> PhD student <span class="eyebrow-separator">/</span> MIT ORC & LIDS</div>
+          <h1 id="hero-title">Jack<br /><em>Zhang.</em></h1>
+          <p class="hero-lead">Making better decisions<br class="desktop-break" /> in an <span class="ink-underline">uncertain world.</span></p>
+          <p class="hero-description">I study reinforcement learning and partially observable systems, with a focus on what we can learn from limited information—and how to make reliable decisions with it.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#publications">View publications <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="art-topline"><span>FIG. 01</span><span>LEARNING FROM WHAT WE OBSERVE</span></div>
+          <svg class="research-visual" viewBox="0 0 560 470" role="img" aria-labelledby="diagram-title diagram-description">
+            <title id="diagram-title">A sketch of partially observable decision-making</title>
+            <desc id="diagram-description">Hidden states influence observations. Observations inform a decision. Curved paths connect the parts of the system.</desc>
+            <defs>
+              <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="1.1" fill="#ced5d1" opacity="0.6" />
+              </pattern>
+              <linearGradient id="softGreen" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e9f0eb" /><stop offset="100%" stop-color="#dce8e2" />
+              </linearGradient>
+              <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#466458" flood-opacity="0.10" />
+              </filter>
+            </defs>
+            <rect x="0" y="0" width="560" height="470" fill="url(#dots)" />
+            <g font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="#66776f">
+              <text x="36" y="63">HIDDEN STATE</text>
+              <text x="243" y="63">OBSERVATION</text>
+              <text x="438" y="63">ACTION</text>
+            </g>
+            <g fill="none" stroke="#91aaa0" stroke-width="2.5" stroke-linecap="round" opacity=".7">
+              <path d="M90 160 C 148 128, 184 135, 268 155" stroke-dasharray="5 9"/>
+              <path d="M105 285 C 164 296, 213 256, 268 231" stroke-dasharray="5 9"/>
+              <path d="M146 219 C 180 185, 207 184, 268 185" stroke-dasharray="5 9"/>
+              <path d="M318 158 C 373 156, 393 179, 444 195" />
+              <path d="M318 232 C 372 227, 403 215, 444 199" />
+            </g>
+            <g fill="none" stroke="#b75a60" stroke-width="2" opacity=".74">
+              <path d="M468 229 C 467 324, 325 363, 175 322" stroke-dasharray="2 9" />
+              <path d="M175 322 l14 -6 m-14 6 l8 12" />
+            </g>
+            <g filter="url(#shadow)">
+              <circle cx="90" cy="160" r="31" fill="#eff0ea" stroke="#abb9b0" stroke-width="2" />
+              <circle cx="146" cy="219" r="27" fill="#e7ece6" stroke="#abb9b0" stroke-width="2" />
+              <circle cx="105" cy="285" r="36" fill="#f0f1ed" stroke="#abb9b0" stroke-width="2" />
+              <circle cx="290" cy="158" r="39" fill="url(#softGreen)" stroke="#82a396" stroke-width="2" />
+              <circle cx="290" cy="234" r="30" fill="url(#softGreen)" stroke="#82a396" stroke-width="2" />
+              <circle cx="464" cy="199" r="43" fill="#a83948" stroke="#a83948" stroke-width="2" />
+            </g>
+            <g fill="#8ba49b">
+              <circle cx="90" cy="160" r="9" /><circle cx="146" cy="219" r="8" /><circle cx="105" cy="285" r="11" />
+              <circle cx="290" cy="158" r="10" /><circle cx="290" cy="234" r="9" />
+            </g>
+            <path d="M453 197 l9 9 16 -19" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <g font-family="Georgia, serif" font-style="italic" font-size="16" fill="#72867a">
+              <text x="61" y="352">unknown</text><text x="258" y="298">signals</text><text x="433" y="272">choice</text>
+            </g>
+            <path d="M36 385 H524" stroke="#d4dcd5" />
+            <g font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#73837b">
+              <text x="38" y="410">THE CENTRAL QUESTION</text>
+            </g>
+            <text x="38" y="443" font-family="Georgia, serif" font-size="22" fill="#24382e">What can the data tell us?</text>
+          </svg>
+          <div class="art-footer"><span class="art-star">✳</span> REINFORCEMENT LEARNING <span class="art-muted">/</span> POMDPs <span class="art-muted">/</span> INFERENCE</div>
+        </div>
+      </section>
+
+      <div class="summary-strip">
+        <div class="wrap strip-inner">
+          <div><span class="mini-label">CURRENTLY</span><strong>PhD Student at MIT ORC & LIDS</strong></div>
+          <div><span class="mini-label">RESEARCH AREAS</span><strong>RL · POMDPs · Statistical Learning</strong></div>
+          <div><span class="mini-label">LOCATION</span><strong>Cambridge, Massachusetts</strong></div>
+        </div>
+      </div>
+
+      <section class="section research-section wrap" id="research" aria-labelledby="research-title">
+        <div class="section-intro">
+          <p class="section-index"><span>01</span> / RESEARCH</p>
+          <h2 id="research-title">Understanding the hidden.<br /><em>Learning the possible.</em></h2>
+          <p>My work sits at the intersection of reinforcement learning, optimization, and statistical inference. I'm particularly interested in settings where an agent never sees the true underlying state of the world.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="card-top"><span class="research-number">01</span><span class="research-symbol" aria-hidden="true">↗</span></div>
+            <h3>Learning under partial observability</h3>
+            <p>How can we recover hidden dynamics and plan effectively when observations reveal only part of the system?</p>
+            <div class="chips"><span>POMDPs</span><span>System identification</span></div>
+          </article>
+          <article class="research-card">
+            <div class="card-top"><span class="research-number">02</span><span class="research-symbol" aria-hidden="true">∼</span></div>
+            <h3>Robust decision-making</h3>
+            <p>How do we design policies that remain dependable when models are imperfect and environments are uncertain?</p>
+            <div class="chips"><span>Robust RL</span><span>Optimization</span></div>
+          </article>
+          <article class="research-card">
+            <div class="card-top"><span class="research-number">03</span><span class="research-symbol" aria-hidden="true">⊙</span></div>
+            <h3>Statistical foundations of learning</h3>
+            <p>What conditions make learning possible, and what guarantees can we establish from finite trajectories?</p>
+            <div class="chips"><span>Identifiability</span><span>Sample complexity</span></div>
+          </article>
+        </div>
+        
+        <!-- Ongoing Research -->
+        <div class="ongoing-work">
+          <h3>Ongoing Research</h3>
+
+          <article class="ongoing-project">
+            <span class="ongoing-status">Work in Progress</span>
+
+            <h4>Active Probing for POMDP Identification</h4>
+
+            <p>
+              <strong>Jack Zhang</strong>,
+              Saurabh Amin, Patrick Jaillet
+            </p>
+          </article>
+
+          <article class="ongoing-project">
+            <span class="ongoing-status">Work in Progress</span>
+
+            <h4>Strategic Learning in Partially Observable Online Marketplaces</h4>
+
+            <p>
+              <strong>Jack Zhang</strong>, Owen Shen, 
+              Saurabh Amin, Patrick Jaillet
+            </p>
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+        <div class="wrap">
+          <div class="section-heading-row">
+            <div>
+              <p class="section-index"><span>02</span> / PUBLICATIONS AND PREPRINTS</p>
+              <h2 id="publications-title">Selected <em>work.</em></h2>
+            </div>
+            <p>A home for papers and preprints on learning, inference, and sequential decision-making.</p>
+          </div>
+          <!-- TODO: Replace this temporary entry with the exact title, coauthors, and paper links. -->
+          <article class="publication-entry">
+            <div class="publication-year">2026</div>
+            <div class="publication-details">
+              <span class="venue"><span class="venue-dot"></span> NeurIPS 2026 · Accepted</span>
+              <h3>From Likelihood Convergence to Parameter Convergence in POMDPs</h3>
+              <p><strong>Jack Zhang</strong>, Saurabh Amin, Jiawei Zhang, Patrick Jaillet</p>
+            </div>
+            <span class="publication-graphic" aria-hidden="true">↗</span>
+          </article>
+          <article class="publication-entry">
+            <div class="publication-year">2026</div>
+            <div class="publication-details">
+              <span class="venue"><span class="venue-dot"></span> Mathematics of Operations Research · Submitted</span>
+              <h3>Approximate Solution of Infinite-Horizon Risk-Sensitive Markov Decision Processes</h3>
+              <p><strong>Jack Zhang</strong>, Mehdi Hemmati, Saumya Sinha, Andrew J. Schaefer</p>
+            </div>
+            <span class="publication-graphic" aria-hidden="true">↗</span>
+          </article>
+          <article class="publication-entry">
+            <div class="publication-year">2026</div>
+            <div class="publication-details">
+              <span class="venue"><span class="venue-dot"></span> INFORMS Journal on Computing · Accepted</span>
+              <h3>Partitioning a Graph into Low-Diameter Clusters</h3>
+              <p><strong>Jack Zhang </strong>, Lucas Silveira, Hamidreza Validi, Logan Smith, Austin Buchanan, Illya V. Hicks </p>
+              <p>
+                <a href="https://optimization-online.org/wp-content/uploads/2024/10/Partitioning_a_graph_into_low_diameter_clusters_paper.pdf"
+                target="_blank" rel="noopener noreferrer">
+                  [Paper]
+                </a>
+              </p>
+            </div>
+            <span class="publication-graphic" aria-hidden="true">↗</span>
+          </article>
+          <article class="publication-entry">
+            <div class="publication-year">2024</div>
+            <div class="publication-details">
+              <span class="venue"><span class="venue-dot"></span> Optimization Letters · Accepted</span>
+              <h3>Linear-Size Formulations for Connected Planar Graph Partitioning and Political Districting</h3>
+              <p><strong>Jack Zhang </strong>, Hamidreza Validi, Austin Buchanan, Illya V. Hicks </p>
+              <p>
+                <a href="https://doi.org/10.1007/s11590-023-02070-0"
+                  target="_blank" rel="noopener noreferrer">
+                  [Journal]
+                </a>
+                <a href="https://optimization-online.org/wp-content/uploads/2022/08/linear-size-formulations-for-partitioning-and-districting.pdf"
+                  target="_blank" rel="noopener noreferrer">
+                  [PDF]
+                </a>
+                <a href="https://github.com/JackDaihanZhang/Linear-size-formulations-for-connected-planar-graph-partitioning-and-political-districting"
+                  target="_blank" rel="noopener noreferrer">
+                  [Code]
+                </a>
+              </p>
+            </div>
+            <span class="publication-graphic" aria-hidden="true">↗</span>
+          </article>
+          <p class="publication-note">More publication details will be added as they become available.</p>
+        </div>
+      </section>
+
+      <section class="section about-section wrap" id="about" aria-labelledby="about-title">
+        <div class="about-side">
+          <p class="section-index"><span>03</span> / ABOUT</p>
+          <h2 id="about-title">A little<br /><em>about me.</em></h2>
+          <div class="about-mark" aria-hidden="true">“</div>
+        </div>
+        <div class="about-body">
+          <p class="about-lead">I'm a PhD student in Operations Research at the Massachusetts Institute of Technology.</p>
+          <p>I study the mathematical foundations of learning and decision-making, especially in partially observable settings. I enjoy questions that connect theory with the realities of sequential data: what a model can identify, what an agent can know, and how to act when uncertainty cannot be eliminated.</p>
+          <div class="about-detail">
+            <div class="detail-key">AFFILIATION</div>
+            <div><strong>Massachusetts Institute of Technology</strong><span>PhD · Operations Research</span></div>
+          </div>
+          <div class="about-detail">
+            <div class="detail-key">RESEARCH INTERESTS</div>
+            <div><strong>Reinforcement learning and inference</strong><span>Partially observable systems, robust optimization, statistical learning</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
+          <p class="section-index"><span>04</span> / GET IN TOUCH</p>
+          <h2 id="contact-title">Let's <em>connect.</em></h2>
+          <p>I'm always interested in thoughtful conversations about research, collaborations, and new ideas.</p>
+          <div class="contact-links" id="contact-links" aria-label="Contact and professional profiles">
+            <!-- Optional links are populated from config.js. -->
+          </div>
+          <p class="contact-fallback" id="contact-fallback">Contact details and profile links will be added here.</p>
+          <div class="contact-bottom"><span>Cambridge, Massachusetts</span><span>Keep exploring <a href="#top">↑ Back to top</a></span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner"><span>© <span id="year">2026</span> Jack Zhang</span><span>Built with curiosity, and a little mathematics.</span></div>
+    </footer>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
